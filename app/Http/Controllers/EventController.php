@@ -16,9 +16,8 @@ class EventController extends Controller
 
         if ($search) {
             $events = Event::where([
-                ['title', 'like', '%'.$search.'%']
+                ['title', 'like', '%' . $search . '%']
             ])->get();
-
         } else {
             $events = Event::all();
         }
@@ -73,11 +72,19 @@ class EventController extends Controller
         return view('events.show', ['event' => $event, 'eventOwner' => $eventOwner]);
     }
 
-    public function dashboard(){
+    public function dashboard()
+    {
         $user = auth()->user();
 
         $events = $user->events;
 
         return view('events.dashboard', ['events' => $events]);
+    }
+
+    public function destroy($id)
+    {
+        Event::findOrFail($id)->delete();
+
+        return redirect('/dashboard')->with('msg', 'Evento excluído com sucesso!');
     }
 }
