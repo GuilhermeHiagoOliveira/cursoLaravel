@@ -64,6 +64,23 @@ header {
     color: #F2A340;
 }
 
+/* footer */
+
+footer {
+    text-align: center;
+    background-color: #353e48;
+    color: #fff;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+
 /* Search Container */
 
 #search-container {
@@ -137,21 +154,6 @@ header {
     color: #757575;
 }
 
-/* footer */
-
-footer {
-    text-align: center;
-    background-color: #353e48;
-    color: #fff;
-    padding: 30px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin-bottom: 0;
-}
 
 /* Event Create Page */
 
@@ -203,6 +205,10 @@ footer p {
 #description-container h3 {
     font-size: 20px;
     font-weight: bold;
+}
+
+#description-container {
+    margin-top: 30px;
 }
 
 #info-container ion-icon {
