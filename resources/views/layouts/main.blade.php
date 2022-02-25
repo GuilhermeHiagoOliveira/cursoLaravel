@@ -8,6 +8,8 @@
     <title>@yield('title')</title>
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? family= Roboto" rel="stylesheet">
 
     <!-- Bootstrap -->
@@ -22,7 +24,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="collapse navbar-collapse" id="navbar">
                 <a href="/" class="navbar-brand">
-                    <img src="/img/hdcevents_logo.svg" alt="HDC Events">
+                    <img src="/img/hdcEventsLogo.png" alt="HDC Events" id="logo">
                 </a>
                 <ul class="navbar-nav">
                     <li class="nav-item">
