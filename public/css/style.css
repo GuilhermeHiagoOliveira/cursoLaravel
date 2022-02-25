@@ -1,3 +1,5 @@
+/* css geral */
+
 * {
     font-family: 'Roboto';
 }
@@ -33,6 +35,16 @@ header {
 
 #logo {
     max-width: 150px;
+}
+
+.msg {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
 }
 
 /* navbar */
@@ -94,11 +106,11 @@ header {
 }
 
 #events-container .card {
-    flex: 1 1 0;
+    flex: 1 1 24%;
     max-width: 25%;
     border-radius: 10px;
     padding: 0;
-    margin: 5px;
+    margin: .5%;
 }
 
 #events-container img {
